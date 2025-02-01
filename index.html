@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="the web site for all devices you want for examples phones-labtops">
+    <meta name="keywords" content="apple,labtop,samsung,oppo">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO-SHOP</title>
+    <!-- link-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link-normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- main-bootstraib-link -->
+     <link rel="stylesheet" href="css/bootstraib.main.css">
+     <!-- link-icon -->
+      <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <!-- link-style-css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <!-- start-header -->
+      <header>
+        <div class="container-h">
+            <!-- start-top-nav -->
+            <div class="top-nav">
+              <span class="open-nav" onclick="opennav()"><i class="bi bi-list" style="color: #fff; font-size: 30px;"></i></span>
+                <p class="logo"><mark>co-</mark>shop</p>
+                <div class="sear-bar">
+                    <form  class="form-search">
+                        <div class="eyes-categorie">
+                    <select name="select-box" id="select-box" class="select-box">
+                        <option value="all-categories">all-categories</option>
+                        <option value="fashions-clothes">hot-deals</option>
+                        <option value="phons-handfree">electronics</option>
+                        <option value="labtop-tablet">appliances</option>
+                        <option value="shoes-glass">mobiles</option>
+                    </select>
+                    
+                    </div>
+                    <div class="search-input">
+                        <input type="text" id="search" class="search" name="search">
+                        <button type="submit" class="submit" id="submit"><i class="bi bi-search"></i></button>   
+                    </div>
+                    </form>
+                </div>
+                <div class="favourite-shop">
+                    <div class="fav">
+                        <i class="bi bi-suit-heart"></i>
+                        <span class="fav-num">0</span>
+                    </div>
+                    <div class="shop">
+                        <i class="bi bi-cart2" onclick="open_cart()"></i>
+                        <span class="shop-num">0</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end-top-nav -->
+             <!-- start-bottom-nav -->
+              <div class="bottom-nav">
+                <span class="close-nav" onclick="closenav()" ><i class="bi bi-x" style="color: #fff; font-size: 30px;"></i></span>
+                <ul class="nav-items-h">
+                    <li class="nav-link-h"><a href="index.html" class="link-item-h  active">Home</a></li>
+                    <li class="nav-link-h"><a href="#" class="link-item-h">About</a></li>
+                    <li class="nav-link-h"><a href="#" class="link-item-h">contact</a></li>
+                    <li class="nav-link-h"><a href="#" class="link-item-h">Accesories</a></li>
+                    <li class="nav-link-h"><a href="#" class="link-item-h">blog</a></li>
+                </ul>
+                <div class="log-sign">
+                    <button class="logn">log in </button>
+                    <button class="sign">sign in <i class="bi bi-person-fill"></i></button>
+                </div>
+              </div>
+              <!-- end-bottom-nav -->
+        </div>
+      </header>
+      <!-- end-header -->
+      <!-- start-slider-banner -->
+       <div class="slider-co" id="head">
+        <div class="container-co">
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/banner_home1.png" alt="banner_home1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/banner_home2.png"  alt="banner_home2">
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="side-bar">
+                <img src="img/banner_home3.png" alt="banner_home3">
+              </div>
+        </div>
+       </div>
+       <!-- end-slider-side banner -->
+        <!-- start-botom-banner -->
+        <section class="banner">
+          <div class="container">
+            <div class="row">
+              <div class="banner-cart">
+                <img src="img/banner3_1.png" alt="banner3_1">
+                <div class="content-cart">
+                  <h5>break deal</h5>
+                  <div class="percent-up-to">
+                    <span class="percent">70%</span>
+                    <div class="up-to">
+                      <p class="up">up</p>
+                      <p class="to">to</p>
+                    </div>
+                  </div>
+                  <p class="fast-shop">fast shop</p>
+                </div>
+              </div>
+              <div class="banner-cart">
+                <img src="img/banner3_2.png" alt="banner3_2">
+                <div class="content-cart">
+                  <h5>break deal</h5>
+                  <div class="percent-up-to">
+                    <span class="percent">70%</span>
+                    <div class="up-to">
+                      <p class="up">up</p>
+                      <p class="to">to</p>
+                    </div>
+                  </div>
+                  <p class="fast-shop">fast shop</p>
+                </div>
+              </div>
+              <div class="banner-cart">
+                <img src="img/banner3_3.png" alt="banner3_3">
+                <div class="content-cart">
+                  <h5>break deal</h5>
+                  <div class="percent-up-to">
+                    <span class="percent">70%</span>
+                    <div class="up-to">
+                      <p class="up">up</p>
+                      <p class="to">to</p>
+                    </div>
+                  </div>
+                  <p class="fast-shop">fast shop</p>
+                </div>
+              </div>
+              <div class="banner-cart">
+                <img src="img/banner3_4.png" alt="banner3_4">
+                <div class="content-cart">
+                  <h5>break dick</h5>
+                  <div class="percent-up-to">
+                    <span class="percent">70%</span>
+                    <div class="up-to">
+                      <p class="up">up</p>
+                      <p class="to">to</p>
+                    </div>
+                  </div>
+                  <p class="fast-shop">fast shop</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- end-bottom-banner -->
+        <!-- start-hot-dick -->
+         <section class="hot-dick">
+          <div class="container-hot" id="dick">
+            <h3 class="hot">hot-deals</h3>
+            <span class="line"></span>
+            
+              <div class="hot-carts">
+             
+            </div>
+            
+          </div>
+         </section>
+         <!-- end-hot-dick -->
+          <!-- start-banner-box -->
+          <section class="banner-box">
+            <div class="container-box">
+              <img src="img/banner_box4.jpg" alt="banner_box4">
+              <img src="img/banner_box5.jpg" alt="banner_box5">
+            </div>
+          </section>
+          <!-- end-banner-box -->
+           <!-- start-electronics -->
+           <section class="electronics">
+            <div class="container-electronic">
+              <h3 class="electr">electronics</h3>
+              <span class="line"></span>
+              
+                <div class="electro-carts">
+               
+              </div>
+              
+            </div>
+           </section>
+            <!-- end-electronics -->
+             <!-- start-appliances -->
+              <section class="appliances">
+                <div class="container-appliances">
+                  <h3 class="appliance">appliances</h3>
+              <span class="line"></span>
+              
+                <div class="appliances-carts">
+               
+              </div>
+              
+                </div>
+              </section>
+              <!-- end-appliances -->
+               <!-- start-banner-box2 -->
+                <section class="banner-box2">
+                  <div class="container-banner-box2">
+                    <img src="img/banner_box1.jpg" alt="banner_box1">
+                    <img src="img/banner_box2.jpg" alt="banner_box2">
+                    <img src="img/banner_box3.jpg" alt="banner_box3">
+                  </div>
+                </section>
+                <!-- end-banner-box2 -->
+                 <!-- start-mobiles -->
+                  <section class="mobiles">
+                    <div class="container-mobiles">
+                      <h3 class="mobiles">mobiles</h3>
+                      <span class="line"></span>
+                      
+                        <div class="mobiles-carts">
+                       
+                      </div>
+                      
+                    </div>
+                  </section>
+                  <!-- end-mobiles -->
+                   <div class="scrol-button">
+                    <button class="move-top"><a href="#head">top</a></button>
+                   </div>
+                    <!-- start-footer -->
+          <footer>
+            <div class="container-fluid">
+                <div class="container">
+                <div class="row">
+                    <div class="zay">
+                      <img src="img/icon.png" alt="white_logo" style="width:50px;">
+                        <div class="zay-list">
+                            <ul>
+                                <li><i class="bi bi-geo-alt-fill"></i>123 Consectetur at ligula 10660</li>
+                                <li><i class="bi bi-telephone-fill"></i>011-170-68105</li>
+                                <li><i class="bi bi-envelope-fill"></i>info@company.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="prod">
+                        <h3 class=" text-light text-capitalize">Products</h3>
+                        <div class="prod-list">
+                            <ul>
+                                <li>hot-deals</li>
+                                <li>electronics</li>
+                                <li>appliances</li>
+                                <li>mobiles</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="furt">
+                        <h3 class="text-light text-capitalize">Further Info</h3>
+                        <div class="furt-list">
+                            <ul>
+                                <li>Home</li>
+                                <li>About </li>
+                                <li>contact</li>
+                                <li>Accesories</li>
+                                <li>blog</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <div class="socia-links">
+                        <ul>
+                            <li><a href="http://www.google.com"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="http://www.instagram.com"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="http://www.linkedin.com"><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+              
+                </div>
+                </div>
+            </div>
+          </footer>
+          <!-- end-footer -->
+           <!-- start-basket -->
+            <div class="basket">
+              <div class="container">
+              <div class="row">
+                <div class="top-item">
+                  <p class="n-item">cart items : <span class="num-items">0</span></p>
+                  <span class="close" onclick="open_cart()"><i class="bi bi-x"></i></span>
+                </div>
+                <div class="carts">
+                 
+                 
+                </div>
+                <div class="bottom-item">
+                  <div class="sub-total">
+                    <p class="sub">sub total:</p>
+                    <span class="total">$1000</span>
+                  </div>
+                  <div class="check-shop">
+                    <button class="check"><a href="check-out.html">check more</a></button>
+                    <button class="shop" onclick="open_cart()">shop more</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- end-basket -->
+        <!-- script-bootstraib-link -->
+           <script src="js/bootstrap.main.js"></script>
+        <!-- script-link -->
+         <!-- <script src="js/co.js"></script>
+         <script src="js/cart.js"></script> -->
+         <script src="js/main.js"></script>
+         <script src="js/basket.js"></script>
+</body>
+</html>

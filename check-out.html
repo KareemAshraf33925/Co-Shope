@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="the web site for all devices you want for examples phones-labtops">
+    <meta name="keywords" content="apple,labtop,samsung,oppo">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO-SHOP</title>
+    <!-- link-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link-normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- main-bootstraib-link -->
+     <link rel="stylesheet" href="css/bootstraib.main.css">
+     <!-- link-icon -->
+      <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <!-- link-style-css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <!-- start-header -->
+      <header>
+        <div class="container-h">
+            <!-- start-top-nav -->
+            <div class="top-nav">
+              <span class="open-nav" onclick="opennav()"><i class="bi bi-list" style="color: #fff; font-size: 30px;"></i></span>
+                <p class="logo"><mark>co-</mark>shop</p>
+                <div class="sear-bar">
+                    <form  class="form-search">
+                        <div class="eyes-categorie">
+                    <select name="select-box" id="select-box" class="select-box">
+                        <option value="all-categories">all-categories</option>
+                        <option value="fashions-clothes">hot-deals</option>
+                        <option value="phons-handfree">electronics</option>
+                        <option value="labtop-tablet">appliances</option>
+                        <option value="shoes-glass">mobiles</option>
+                    </select>
+                    
+                    </div>
+                    <div class="search-input">
+                        <input type="text" id="search" class="search" name="search">
+                        <button type="submit" class="submit" id="submit"><i class="bi bi-search"></i></button>   
+                    </div>
+                    </form>
+                </div>
+                <div class="favourite-shop">
+                    <div class="fav">
+                        <i class="bi bi-suit-heart"></i>
+                        <span class="fav-num">0</span>
+                    </div>
+                    <div class="shop">
+                        <i class="bi bi-cart2" onclick="open_cart()"></i>
+                        <span class="shop-num">0</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end-top-nav -->
+             <!-- start-bottom-nav -->
+              <div class="bottom-nav">
+                <span class="close-nav" onclick="closenav()" ><i class="bi bi-x" style="color: #fff; font-size: 30px;"></i></span>
+                <ul class="nav-items-h">
+                    <li class="nav-link-h"><a href="index.html" class="link-item-h  active">Home</a></li>
+                    <li class="nav-link-h"><a href="#" class="link-item-h">About</a></li>
+                    <li class="nav-link-h"><a href="#" class="link-item-h">contact</a></li>
+                    <li class="nav-link-h"><a href="#" class="link-item-h">Accesories</a></li>
+                    <li class="nav-link-h"><a href="#" class="link-item-h">blog</a></li>
+                </ul>
+                <div class="log-sign">
+                    <button class="logn">log in </button>
+                    <button class="sign">sign in <i class="bi bi-person-fill"></i></button>
+                </div>
+              </div>
+              <!-- end-bottom-nav -->
+        </div>
+      </header>
+      <!-- end-header -->   
+       <!-- start-check-out -->
+        <main>
+            <div class="container">
+                <div class="row">
+                    <form action="" id="check">
+                        <div class="carts-check">
+                            <h3>order summary</h3>
+                            <div class="cart-selected-ptoduct">
+                              
+
+                            </div>
+                            <div class="sub-total">
+                                <p class="sub">sub total :</p>
+                                <span class="salary-sub">$000</span>
+                            </div>
+                            <div class="shoping">
+                                <p class="shop">shoping :</p>
+                                <span class="salary-shop">$000</span>
+                            </div>
+                            <div class="shoping-total">
+                                <p class="shop-total">total :</p>
+                                <span class="salary-total">$000</span>
+                            </div>
+                            
+                            <button type="submit" id="submit">place order</button>
+                        </div>
+                        <div class="address-coupon">
+                            <h3 class="del">Delivery Address</h3>
+                            <div class="information-client">
+                                <label for="email" class="em">Email</label>
+                                <input type="email" name="email" class="email" id="email" placeholder="Enter Your Email" required>
+                                <label for="name" class="nam">Name</label>
+                                <input type="text" name="name" class="name" id="name" placeholder="Enter Your Name" required>
+                                <label for="address" class="add">Address</label>
+                                <input type="text" name="address" class="address" id="address" placeholder="Enter Your Address" required>
+                                <label for="phone" class="pho">Phone</label>
+                                <input type="number" name="phone" class="phone" id="phone" placeholder="Enter Your Phone" required>
+                            </div>
+                            <div class="coupone">
+                                <h3>coupone code</h3>
+                                <label for="coupone" class="cou">coupone</label>
+                                <input type="text" name="coupone" class="coupone" id="coupone" placeholder="Enter Your Coupone">
+                                <button class="applay">applay</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- end-check-out -->
+         
+                  <!-- end-mobiles -->
+                  
+                    <!-- start-footer -->
+          <footer>
+            <div class="container-fluid">
+                <div class="container">
+                <div class="row">
+                    <div class="zay">
+                      <img src="img/icon.png" alt="white_logo" style="width:50px;">
+                        <div class="zay-list">
+                            <ul>
+                                <li><i class="bi bi-geo-alt-fill"></i>123 Consectetur at ligula 10660</li>
+                                <li><i class="bi bi-telephone-fill"></i>011-170-68105</li>
+                                <li><i class="bi bi-envelope-fill"></i>info@company.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="prod">
+                        <h3 class=" text-light text-capitalize">Products</h3>
+                        <div class="prod-list">
+                            <ul>
+                                <li>hot-deals</li>
+                                <li>electronics</li>
+                                <li>appliances</li>
+                                <li>mobiles</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="furt">
+                        <h3 class="text-light text-capitalize">Further Info</h3>
+                        <div class="furt-list">
+                            <ul>
+                                <li>Home</li>
+                                <li>About </li>
+                                <li>contact</li>
+                                <li>Accesories</li>
+                                <li>blog</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <div class="socia-links">
+                        <ul>
+                            <li><a href="http://www.google.com"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="http://www.instagram.com"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="http://www.linkedin.com"><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+              
+                </div>
+                </div>
+            </div>
+          </footer>
+          <!-- end-footer -->
+           <!-- start-basket -->
+            <div class="basket">
+              <div class="container">
+              <div class="row">
+                <div class="top-item">
+                  <p class="n-item">cart items : <span class="num-items">0</span></p>
+                  <span class="close" onclick="open_cart()"><i class="bi bi-x"></i></span>
+                </div>
+                <div class="carts">
+                 
+                 
+                </div>
+                <div class="bottom-item">
+                  <div class="sub-total">
+                    <p class="sub">sub total:</p>
+                    <span class="total">$1000</span>
+                  </div>
+                  <div class="check-shop">
+                    <button class="check"><a href="check-out.html">check more</a></button>
+                    <button class="shop" onclick="open_cart()">shop more</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- end-basket -->
+        <!-- script-bootstraib-link -->
+           <script src="js/bootstrap.main.js"></script>
+        <!-- script-link -->
+
+         <!-- <script src="js/cart.js"></script> -->
+         <script src="js/basket.js"></script>
+</body>
+</html>
