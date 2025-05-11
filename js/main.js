@@ -7,7 +7,7 @@ const mobileCarts = document.querySelector(".mobiles-carts");
 
 
 //  fetch api
-fetch("../products/products.json").then(respond =>{
+fetch("https://github.com/KareemAshraf33925/Co-Shope/main/products/products.json").then(respond =>{
     if(!respond.ok){
        throw new Error("field fetch api")
     }
