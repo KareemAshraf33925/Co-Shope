@@ -20,7 +20,7 @@ function closenav(){
 const carts = document.querySelector(".carts");
 let basketProducts = JSON.parse(localStorage.getItem("basket")) || [] ;
 
-fetch("https://fakestoreapi.com/products").then(respond => respond.json()).then( product =>{
+fetch("../products/products.json").then(respond => respond.json()).then( product =>{
     const Add = document.querySelectorAll(".add");
     Add.forEach((btn)=>{
         btn.addEventListener("click",(e)=>{
@@ -62,8 +62,8 @@ const addTocart = (currenProduct)=>{
         totalprice += totalpriceitem;
         carts.innerHTML +=`<div class="cart-select">
                     <div class="content-cart">
-                      <img src="${item.image}" alt="1.png">
-                      <p class="name">${item.title}</p>
+                      <img src="${item.img}" alt="1.png">
+                      <p class="name">${item.name}</p>
                       <p class="salarye">$${totalpriceitem}</p>
                       <div class="buttons-inc-dec">
                         <button class="decreas" data-index="${index}" >-</button>
@@ -76,8 +76,8 @@ const addTocart = (currenProduct)=>{
                   if(cart_selected_ptoduct){
                     cart_selected_ptoduct.innerHTML +=` <div class="cart-select">
                                     <div class="content-cart">
-                                      <img src="${item.image}" alt="1.png">
-                                      <p class="name">${item.title}</p>
+                                      <img src="${item.img}" alt="1.png">
+                                      <p class="name">${item.name}</p>
                                       <p class="salarye">$${totalpriceitem}</p>
                                       <div class="buttons-inc-dec">
                                         <button class="decreas" data-index="${index}" >-</button>
