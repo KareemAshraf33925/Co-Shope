@@ -20,7 +20,7 @@ function closenav(){
 const carts = document.querySelector(".carts");
 let basketProducts = JSON.parse(localStorage.getItem("basket")) || [] ;
 
-fetch("https://github.com/KareemAshraf33925/Co-Shope/main/products/products.json").then(respond => respond.json()).then( product =>{
+fetch("https://raw.githubusercontent.com/KareemAshraf33925/Co-Shope/main/products/products.json").then(respond => respond.json()).then( product =>{
     const Add = document.querySelectorAll(".add");
     Add.forEach((btn)=>{
         btn.addEventListener("click",(e)=>{
