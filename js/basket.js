@@ -35,7 +35,7 @@ fetch("https://raw.githubusercontent.com/KareemAshraf33925/Co-Shope/main/product
         })
     }) 
 
-});
+}).catch((error)=>console.log(error));
 
 const addTocart = (currenProduct)=>{
     basketProducts.push({...currenProduct ,quantity: 1});

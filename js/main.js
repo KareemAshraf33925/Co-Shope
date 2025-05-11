@@ -98,6 +98,6 @@ fetch("https://raw.githubusercontent.com/KareemAshraf33925/Co-Shope/main/product
       
     });
 
-});
+}).catch((error)=>console.log(error))
 
 /*-----------------------------------------end--------------------------------------------------------------*/
