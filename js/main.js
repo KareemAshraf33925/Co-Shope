@@ -7,7 +7,7 @@ const mobileCarts = document.querySelector(".mobiles-carts");
 
 
 //  fetch api
-fetch("https://github.com/KareemAshraf33925/Co-Shope/main/products/products.json").then(respond =>{
+fetch("https://raw.githubusercontent.com/KareemAshraf33925/Co-Shope/main/products/products.json").then(respond =>{
     if(!respond.ok){
        throw new Error("field fetch api")
     }
@@ -98,6 +98,6 @@ fetch("https://github.com/KareemAshraf33925/Co-Shope/main/products/products.json
       
     });
 
-});
+}).catch((error)=>console.log(error))
 
 /*-----------------------------------------end--------------------------------------------------------------*/
